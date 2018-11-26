@@ -1,0 +1,42 @@
+#Session 18: Assignment 1
+Problem Statement 1:
+Is gender independent of education level? A random sample of 395 people were
+surveyed and each person was asked to report the highest education level they
+obtained. The data that resulted from the survey is summarized in the following table:
+
+           High School Bachelors Masters Ph.d. Total
+    Female    60            54      46     41    201
+    Male      40            44      53     57    194
+    Total    100            98      99     98    395
+
+Question: Are gender and education level dependent at 5% level of significance? In
+other words, given the data collected above, is there a relationship between the gender
+of an individual and the level of education that they have obtained?
+
+#Solution
+
+Given: Below is given Observerd value table
+           High School Bachelors Masters Ph.d. Total
+    Female    60            54      46     41    201
+    Male      40            44      53     57    194
+    Total    100            98      99     98    395
+    
+We know that 
+Ho:Null Hypothesis: The two categorical variables are independent
+Ha:Alternative Hypothesis: The two categorical variables are dependent
+Step1:We shall find Ho Value but first lets find expected value E  under the null hypothesis using formula 
+E=(row total×column total)/sample size
+
+Below is Expected value(E) table
+            High School  Bachelors   Masters   Ph.d.   Total
+    Female    50.886	      49.868	 50.377	  49.868	  201
+    Male      49.114	      48.132	 48.623	  48.132	  194
+    Total     100	          98	     99	      98	      395
+    
+ Step2: lets find test statistics  Using   Chi-Square Test Statistic using formula:χ2=∑(O−E)2/E
+ χ2=(60−50.886)2/50.886+⋯+(57−48.132)2/48.132=8.006
+
+
+The critical value of χ2 with 3 degree of freedom is 7.815. 
+Answer: we reject the null hypothesis as 8.006 > 7.815.
+Conclusion: the education level depends on gender at a 5% level of significance.
